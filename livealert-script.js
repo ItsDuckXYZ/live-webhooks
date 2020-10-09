@@ -10,7 +10,7 @@ window.addEventListener('obsSceneChanged', function(event) {
   request.setRequestHeader('Content-type', 'application/json');
 
   const params = {
-    content: message
+    content: `${message} + ${link} ahhhhhhhhhhhhhhhhhh ${message}`
   }
   
   request.send(JSON.stringify(params));
