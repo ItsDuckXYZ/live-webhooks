@@ -10,4 +10,7 @@ generateButton.addEventListener('click', () => {
 
   const sourceLink = `https://itsduckxyz.github.io/live-webhooks/livealert?link=${webhook}&message=${discordMsg}`;
   document.querySelector('#source-link').innerHTML = sourceLink;
+  if (!message.value) {
+    message.value = discordMsg
+  }
 })
