@@ -3,7 +3,7 @@ const urlParams = new URLSearchParams(queryString);
 const link = decodeURIComponent(urlParams.get('link'));
 const message = decodeURIComponent(urlParams.get('message'));
 
-window.addEventListener('obsSceneChanged', function(event) {
+window.addEventListener('obsStreamingStarting', function(event) {
   const request = new XMLHttpRequest();
 
   request.open("POST", link);
