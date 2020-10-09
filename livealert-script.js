@@ -1,7 +1,7 @@
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const link = decodeURIComponent(urlParams.get('link'));
-const message = decodeURIComponent(urlParams.get('messsage'));
+const message = decodeURIComponent(urlParams.get('message'));
 
 window.addEventListener('obsSceneChanged', function(event) {
   const request = new XMLHttpRequest();
@@ -10,7 +10,7 @@ window.addEventListener('obsSceneChanged', function(event) {
   request.setRequestHeader('Content-type', 'application/json');
 
   const params = {
-    content: `${message} + ${link} ahhhhhhhhhhhhhhhhhh ${message}`
+    content: message
   }
   
   request.send(JSON.stringify(params));
