@@ -1,7 +1,7 @@
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const link = decodeURIComponent(urlParams.get('link'));
-const channel = urlParams.get('channel');
+const message = urlParams.get('messsage');
 
 window.addEventListener('obsSceneChanged', function(event) {
   const request = new XMLHttpRequest();
@@ -10,7 +10,7 @@ window.addEventListener('obsSceneChanged', function(event) {
   request.setRequestHeader('Content-type', 'application/json');
 
   const params = {
-    content: `https://www.twitch.tv/${channel}`
+    content: message
   }
   
   request.send(JSON.stringify(params));

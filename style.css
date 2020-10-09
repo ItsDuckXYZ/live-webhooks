@@ -1,44 +1,55 @@
 body {
-  background-color: gray;
-  text-align: center;
+  background-color: #262626;
+  color: white;
 }
 
-.setup {
-  margin: auto;
-  width: 60%;
+a.button {
+  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.4);
+  background-color: black;
+  border-radius: 15px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 13px;
+  padding: 15%;
+  text-decoration: none
+}
 
+.button-container.source {
+  right: 25px;
+}
+.button-container.help {
+  left: 25px;
+}
+
+.generator, .final {
+  margin: auto;
+  text-align: center;
+  width: 60%;
+  padding-bottom: 50px;
+}
+
+.generator {
+  margin-top: 100px;
 }
 
 #webhook-gen {
-  margin-top: 50px;
-  margin-bottom: 20px;
-  left: 50%;
-  width: 10%;
+  width: 200px;
+  height: 50px;
+  color: white;
+  background-color: #6441a5;
+  border: black solid 1px;
+  border-radius: 10px;
 }
 
 #link-container {
-  margin: auto;
+  margin-top: 10px;
   border: black solid 1px;
-  background-color: #757472;
-  border-radius: 5px;
-  width: 50%;
-}
-
-input {
-  background-color: #757472;
-  color: white;
-  width: 100%;
-  height: 100px;
-  border: 1px solid black;
+  background-color: white;
+  color: black;
   border-radius: 10px;
-  margin-bottom: 5px;
-  text-align: center;
-  font-size: 20px;
-}
-
-::placeholder {
-  color: white;
-  opacity: 0.7;
+  height: 80px;
+  width: 100%;
 }
 
 .button-container {
@@ -50,29 +61,26 @@ input {
   color: white;
 }
 
-.button-container.help {
-  top: 60%;
-  left: 15%;
+input {
+  width: 100%;
+  height: 60px;
+  border: black solid 1px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
-.button-container.source {
-  top: 60%;
-  right: 15%;
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #363636;
+  color: white;
+  text-align: center;
 }
 
-a.button {
-  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.4);
-  background-color: black;
-  border-radius: 15px;
-  display: inline-block;
-  cursor: pointer;
-  color: #ffffff;
-  font-size: 13px;
-  padding: 30px;
-  text-decoration: none
-}
-
-span {
-  margin-top: 10px;
-  font-size: 30px;
+.footer a {
+  text-decoration: none;
+  color: #6441a5;
 }
