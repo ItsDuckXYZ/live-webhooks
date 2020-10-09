@@ -1,0 +1,78 @@
+body {
+  background-color: gray;
+  text-align: center;
+}
+
+.setup {
+  margin: auto;
+  width: 60%;
+
+}
+
+#webhook-gen {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  left: 50%;
+  width: 10%;
+}
+
+#link-container {
+  margin: auto;
+  border: black solid 1px;
+  background-color: #757472;
+  border-radius: 5px;
+  width: 50%;
+}
+
+input {
+  background-color: #757472;
+  color: white;
+  width: 100%;
+  height: 100px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  text-align: center;
+  font-size: 20px;
+}
+
+::placeholder {
+  color: white;
+  opacity: 0.7;
+}
+
+.button-container {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.button-container.help {
+  top: 60%;
+  left: 15%;
+}
+
+.button-container.source {
+  top: 60%;
+  right: 15%;
+}
+
+a.button {
+  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.4);
+  background-color: black;
+  border-radius: 15px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 13px;
+  padding: 30px;
+  text-decoration: none
+}
+
+span {
+  margin-top: 10px;
+  font-size: 30px;
+}
