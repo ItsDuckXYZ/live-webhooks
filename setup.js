@@ -3,9 +3,6 @@ const message = document.querySelector('#message');
 const link = document.querySelector('#webhook-input');
 
 generateButton.addEventListener('click', () => {
-  console.log(generateButton)
-  console.log(message)
-  console.log(link)
 
   const webhook = encodeURIComponent(link.value);
   if (!webhook) return;
